@@ -1,0 +1,405 @@
+.nav-item{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(20, 31, 31, 0.7);
+    margin: 0px 25px;
+}
+.nav-item::before{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 5px;
+    background-color: #426868;
+    transition: 300ms;
+}
+.nav-item:hover::before{
+    width: 100%;
+    height: 5px;
+    transition: 300ms;
+}
+
+#section_1 .container{
+    margin: 0px;
+    padding: 0px;
+}
+#section_3 p{
+    color: #141F1F;
+}
+#section_3 h4{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+}
+#section_3 h5{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #141F1F;
+}
+#card1 p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #141F1F;
+}
+#section_3 button{
+    background: #426868;
+    border-radius: 100px;
+    width: 220px;
+    height: 55px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 40px;
+    color: #D4CBC4;
+}
+#empty-div{
+    width: 50px;
+    height: 50px;
+    background-color: #426868;
+}
+#section_2{
+    height: 50px;
+}
+#section_4 h2{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 76px;
+    color: #141F1F;
+    text-align: center;
+    padding-top: 20px;
+}
+#section_4 p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
+.image-1{
+    background: url("./images/Rectangle\ 3.png");
+    background-position: center;
+    background-size: cover;
+    grid-area: one;
+    height: 500px;
+}
+.image-2{
+    background: url("./images/Rectangle\ 4.png");
+    background-position: center;
+    background-size: cover;
+    grid-area: two;
+}
+.image-3{
+    background: url("./images/Rectangle\ 5.png");
+    background-position: center;
+    background-size: cover;
+    grid-area: three;
+}
+.image-4{
+    background: url("./images/Rectangle\ 4\ \(1\).png");
+    background-position: center;
+    background-size: cover;
+    grid-area: four;
+}
+.image-5{
+    background: url("./images/Rectangle\ 3\ \(1\).png");
+    background-position: center;
+    background-size: cover;
+    grid-area: five;
+}
+.image-6{
+    background: url("./images/Rectangle\ 5\ \(1\).png");
+    background-position: center;
+    background-size: cover;
+    grid-area: six;
+}
+footer{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 44px;
+    color: #141F1F;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #section_1{
+        margin-top: 70px;
+        background-color: #D4CBC4;
+        height: 103vh;
+        padding-left: 180px;
+    }
+    #section_1 h2{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 35px;
+        color: #141F1F;
+        padding: 20px 0px 10px;
+    }
+    #section_1 h1{
+        font-family: Noto Serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 40px;
+    }
+    #section_1 p{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #141F1F;
+    }
+    #section_1 button{
+        background: #426868;
+        border-radius: 100px;
+        width: 200px;
+        height: 45px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 40px;
+        color: #D4CBC4;
+        margin: 12px;
+        border: 1px solid #426868;
+    }
+    #section_1 button:hover, #section_5 button:hover, #card1 button:hover{
+        font-size: 25px;
+    }
+    .hero-1{
+        margin: 5px 50px;
+    }
+    .hero-2, .hero-3{
+        display: none;
+    }
+    #section_3{
+        background-color: #D4CBC4;
+        height: 900px;
+        padding-left: 160px;   
+    }
+    #section_3 h4{
+        padding-top: 20px;
+    }
+    #section_3 .row .g-0{
+        margin: 10px;
+    }
+    #section_3 .card{
+        background-color: #D4CBC4;
+        width: 400px;
+        margin: 10px;
+        border: 0px;
+        padding-left: 30px;
+    }
+    .grid-container{
+        display: grid;
+        min-height: 500px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+            "one one"
+            "one one"
+            "two three"
+            "four six"
+            "five five"
+            "five five"
+        ;
+        grid-gap: 20px;
+        border: 2px solid white;
+        outline: white;
+    }
+    
+    #section_5 .container{
+        background-color: #D4CBC4;
+        width: 480px;
+        height: 700px;
+    }
+    #section_5 h3{
+        color: #141F1F;
+        font-family: Noto Serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 32px;
+    }
+    #section_5 label{
+        font-family: Noto Serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 44px;
+    }
+    #section_5 textarea{
+        height: 150px;
+    }
+    #section_5 button{
+        background: #426868;
+        width: 300px;
+        height: 60px;
+        border-radius: 100px;
+        color: #ffffff;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 40px;
+    }
+    #section_5 form{
+        margin: 50px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    /* SECTION 1 */
+    #section_1{
+        margin-top: 70px;
+        background-color: #D4CBC4;
+        height: 115vh;
+    }
+    #section_1 .container{
+        margin: 0px;
+        padding: 0px;
+    }
+    #section_1 .row{
+        margin-left: 70px;
+    }
+    #written-content{
+        margin-top: 70px;
+    }
+    #section_1 h2{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+        color: #141F1F;
+        padding: 10px 0px;
+    }
+    #section_1 h1{
+        font-family: Noto Serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 60px;
+    }
+    #section_1 p{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+        color: #141F1F;
+    }
+    #section_1 button{
+        background: #426868;
+        border-radius: 100px;
+        width: 220px;
+        height: 55px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 40px;
+        color: #D4CBC4;
+    }
+    #section_1 button:hover, #section_5 button:hover, #card1 button:hover{
+        font-size: 33px;
+    }
+    #imageDiv{
+        display: flex;
+        margin-left: 0px;
+    }
+    .hero-1{
+        margin-top: 445px;
+    }
+    .hero-2{
+        margin-top: 155px;
+    }
+    .hero-3{
+        margin-top: 80px;
+    }
+    #section_3{
+        background-color: #D4CBC4;
+        height: 400px;    
+    }
+    
+    #section_3 .card{
+        background-color: #D4CBC4;
+        margin: 50px 10px;
+        width: 400px;
+        border: 0px;
+        height: 250px;
+        padding-left: 30px;
+    }
+    .grid-container{
+        display: grid;
+        min-height: 500px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+            "one one two"
+            "one one three"
+            "four five five"
+            "six five five"
+        ;
+        grid-gap: 20px;
+        border: 2px solid white;
+        outline: white;
+    }
+
+    #section_5 .container{
+        background-color: #D4CBC4;
+        width: 900px;
+        height: 700px;
+    }
+    #section_5 h3{
+        color: #141F1F;
+        font-family: Noto Serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 32px;
+    }
+    #section_5 label{
+        font-family: Noto Serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 44px;
+    }
+    #section_5 textarea{
+        height: 150px;
+    }
+    #section_5 button{
+        background: #426868;
+        width: 300px;
+        height: 60px;
+        border-radius: 100px;
+        color: #ffffff;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 40px;
+        margin: 10px 200px;
+    }
+    #section_5 form{
+        margin: 50px;
+    }
+}
